@@ -14,13 +14,16 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+
+- task: CmdLine@2
+  inputs:
+    script: 'npm install <C:\Agent2.0\vsts-agent-win-x64-2.209.0 (2)\_work\1\s\node_modules>'
+
 - script: |
     npm install
     npm run build
   displayName: 'npm install and build'
 
-- task: CmdLine@2
-  inputs:
-    script: 'npm root'
+
 
 
