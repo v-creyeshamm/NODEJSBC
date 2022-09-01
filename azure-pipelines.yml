@@ -15,6 +15,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    npm install <C:\Agent2.0\vsts-agent-win-x64-2.209.0 (2)\_work\1\s>
     npm run build
   displayName: 'npm install and build'
 
