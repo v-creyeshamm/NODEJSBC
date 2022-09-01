@@ -14,10 +14,11 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-
+- task: CmdLine@2
+  inputs:
+    script: 'npm install <C:\Users\creyeshamm\AppData\Roaming\npm\node_modules>'
 
 - script: |
-    npm install <C:\Users\creyeshamm\AppData\Roaming\npm\node_modules>
     npm run build
     npm root -g
   displayName: 'npm install and build'
