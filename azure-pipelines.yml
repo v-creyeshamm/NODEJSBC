@@ -16,7 +16,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'npm install <C:\Users\creyeshamm\AppData\Roaming\npm\node_modules>'
+    script: 'npm install <C:\Users\creyeshamm\Documents\Node JS\node_modules>'
 
 - script: |
     npm run build
