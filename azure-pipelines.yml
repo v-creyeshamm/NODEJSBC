@@ -14,7 +14,10 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+
+
 - script: |
+    npm install <C:\Users\creyeshamm\AppData\Roaming\npm\node_modules>
     npm run build
     npm root -g
   displayName: 'npm install and build'
